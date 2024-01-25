@@ -1,0 +1,40 @@
+{
+  "name": "murphyjoseph",
+  "version": "1.0.0",
+  "description": "Joseph Murphy's personal site!",
+  "main": "root.tsx",
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev",
+    "start": "remix-serve build",
+    "typecheck": "tsc"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/server": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@remix-run/node": "^2.0.1",
+    "@remix-run/react": "^2.0.1",
+    "@remix-run/serve": "^2.0.1",
+    "framer-motion": "^6.5.1",
+    "isbot": "^3.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2",
+    "@remix-run/eslint-config": "^2",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "eslint": "^8.47.0",
+    "typescript": "^5.2.2"
+  },
+  "volta": {
+    "node": "18.18.0",
+    "yarn": "3.6.4",
+    "npm": "9.8.1"
+  }
+}
