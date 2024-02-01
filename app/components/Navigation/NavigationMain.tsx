@@ -1,4 +1,4 @@
-import { chakra, Box, Heading } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 
 export const NavigationMain = () => {
 
