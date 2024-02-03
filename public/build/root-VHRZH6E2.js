@@ -16772,7 +16772,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/Navigation/NavigationMain.tsx"
   );
-  import.meta.hot.lastModified = "1703825269219.2517";
+  import.meta.hot.lastModified = "1706977985140.1917";
 }
 var NavigationMain = () => {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Box, { as: "nav", position: "sticky", top: "0", left: "0", zIndex: "1", background: "white", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Box, { background: "whiteAlpha.300", padding: 3, boxShadow: "base", mb: 1, children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Heading, { textAlign: "center", fontSize: "lg", children: "Joseph Murphy" }, void 0, false, {
@@ -17182,7 +17182,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/pages/PageHome/PageHome.tsx"
   );
-  import.meta.hot.lastModified = "1703817291072.2134";
+  import.meta.hot.lastModified = "1706977980918.2358";
 }
 var PageHome = () => {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_jsx_dev_runtime8.Fragment, { children: [
@@ -17418,4 +17418,4 @@ export {
   App as default,
   links
 };
-//# sourceMappingURL=/build/root-GILHJSNF.js.map
+//# sourceMappingURL=/build/root-VHRZH6E2.js.map
