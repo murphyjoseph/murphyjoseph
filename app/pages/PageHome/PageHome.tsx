@@ -1,9 +1,9 @@
 import { NavigationMain } from "~/components/Navigation/NavigationMain";
-import { SectionAboutUs } from "./SectionAboutUs";
 import { SectionHero } from "./SectionHero";
 import { SectionMission } from "~/pages/PageHome/SectionMission";
 import { SpacerSection } from "~/patterns/Spacer/SpacerSection";
 import { SectionSponsors } from "./SectionSponsors";
+import { SectionEvents } from "./SectionEvents";
 
 export const PageHome = () => {
 
@@ -15,7 +15,7 @@ export const PageHome = () => {
         <SectionMission />
       </SpacerSection>
       <SpacerSection>
-        <SectionAboutUs />
+        <SectionEvents />
       </SpacerSection>
       <SpacerSection>
         <SectionSponsors />

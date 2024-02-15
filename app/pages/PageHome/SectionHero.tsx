@@ -4,29 +4,18 @@ export const SectionHero = () => {
 
   return (
     <Box
-      height="100vh"
+      height={{base: '300px', md: '400px', lg: '500px'}}
       width="100%"
       position="relative"
+      overflow="hidden"
     >
-      <Box 
-        background="linear-gradient(to bottom, #ff9999, #cc0000)"
-        height="50vh"
-        width="80%"
-      >
-
-      </Box>
-      <Image 
-        // todo: dont want image loading via css
-        // backgroundImage="url('/armswideopen.png')"
-        backgroundRepeat="repeat"
-        backgroundSize="contain"
-        alt="serious banner" 
-        height="300px" 
-        src="/armswideopen.png"
+      <Image
+        alt="serious banner"
+        src="./backdrop-min.jpeg"
         position="absolute"
-        bottom="0"
+        top={{base: '0', md: '-100px', lg: '-150px'}}
         transform="translateX(50%, -50%)"
-        // width="100%" 
+        width="100%"
       />
     </Box>
   )

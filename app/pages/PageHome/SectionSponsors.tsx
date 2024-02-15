@@ -1,14 +1,30 @@
-import { Heading, Avatar, Box, SimpleGrid } from '@chakra-ui/react'
+import { Heading, Image, Box, SimpleGrid } from '@chakra-ui/react'
+
+const sponsors = [
+  '/sponsors/logo-caredirect.png',
+  '/sponsors/logo-codeworks.jpg',
+  '/sponsors/logo-expansive.png',
+  '/sponsors/logo-indeed.png',
+  '/sponsors/logo-new-resources.png',
+  '/sponsors/logo-skygen.jpg',
+  '/sponsors/logo-vba.jpg',
+  '/sponsors/logo-wickid-cool.png',
+  '/sponsors/logo-form-labs.jpg',
+  '/sponsors/logo-roof-marketplace.png',
+  '/sponsors/logo-pkware.png',
+]
 
 export const SectionSponsors = () => {
 
   return (
     <Box maxW="lg" margin="0 auto">
-      <Heading textAlign="center" mb={4}>Sponsors</Heading>
-      <SimpleGrid templateColumns='repeat(auto-fill, minmax(150px, 1fr))' spacing={2} >
-        <Avatar size="2xl" src="/armswideopen.png" />
-        <Avatar size="2xl" src="/armswideopen.png" />
-        <Avatar size="2xl" src="/armswideopen.png" />
+      <Heading textAlign="center" mb={10}>Sponsors</Heading>
+      <SimpleGrid columns={[2, null, 3]} spacingX={9} spacingY={9} >
+        {
+          sponsors.map((sponsor) => (
+            <Image key={sponsor} maxWidth="150px" borderRadius="0" src={sponsor} alignSelf="center" />
+          ))
+        }
       </SimpleGrid>
     </Box>
   )

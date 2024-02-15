@@ -16,8 +16,8 @@ export const mitobyteTheme = extendTheme({
     },
   },
   fonts: {
-    body: "arial, sans-serif",
-    heading: "Helvetica, serif",
+    body: "'Chivo', sans-serif",
+    heading: "'Glory', serif",
     mono: "Menlo, monospace",
   },
   fontSizes: {
