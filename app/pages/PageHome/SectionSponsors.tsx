@@ -17,15 +17,18 @@ const sponsors = [
 export const SectionSponsors = () => {
 
   return (
-    <Box maxW="lg" margin="0 auto">
-      <Heading textAlign="center" mb={10}>Sponsors</Heading>
-      <SimpleGrid columns={[2, null, 3]} spacingX={9} spacingY={9} >
-        {
-          sponsors.map((sponsor) => (
-            <Image key={sponsor} maxWidth="150px" borderRadius="0" src={sponsor} alignSelf="center" />
-          ))
-        }
-      </SimpleGrid>
+    <Box background="gray.50">
+      <Box maxW="lg" margin="0 auto">
+        <Heading textAlign="center" mb={10}>Sponsors</Heading>
+        <SimpleGrid columns={[2, null, 3]} spacingX={9} spacingY={9} >
+          {
+            sponsors.map((sponsor) => (
+              <Image key={sponsor} maxWidth="150px" borderRadius="0" src={sponsor} alignSelf="center" />
+            ))
+          }
+
+        </SimpleGrid>
+        </Box>
     </Box>
   )
 }

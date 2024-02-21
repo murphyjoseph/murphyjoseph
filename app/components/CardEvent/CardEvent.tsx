@@ -7,9 +7,9 @@ export interface CardEventProps {
   heading: string;
   description: string;
   imageSrc: string;
-  linkMeetup: string;
-  linkEventbrite: string;
-  linkOther: string;
+  linkMeetup?: string;
+  linkEventbrite?: string;
+  linkOther?: string;
 }
 
 export const CardEvent = ({
@@ -23,18 +23,21 @@ export const CardEvent = ({
   return (
     <Card maxW='md'>
       <CardHeader pb={2}>
-        <Heading size='md'>{heading}</Heading>
+        <Image
+          objectFit='cover'
+          src={imageSrc}
+          alt='event image'
+          maxWidth="150px"
+          // pb={3}
+        />
+        {/* <Heading size='md'>{heading}</Heading> */}
       </CardHeader>
+
       <CardBody>
         {description}
       </CardBody>
-      <Image
-        objectFit='cover'
-        src={imageSrc}
-        alt='event image'
-        padding={4}
-      />
-      <CardFooter
+
+      {/* <CardFooter
         justify='space-between'
         flexWrap='wrap'
         columnGap={1}
@@ -51,10 +54,7 @@ export const CardEvent = ({
         <Button as="a" flex='1' variant='ghost' leftIcon={<LogoEventbrite />} href={linkEventbrite}>
           Eventbrite
         </Button>
-        {/* <Link as={Button} flex='1' variant='ghost' leftIcon={<InfoIcon />} href={linkOther}>
-          Other
-        </Link> */}
-      </CardFooter>
+      </CardFooter> */}
     </Card>
   )
 }

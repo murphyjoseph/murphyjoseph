@@ -15,6 +15,8 @@ import { MetaFunction, LinksFunction } from '@remix-run/node' // Depends on the 
 import { ServerStyleContext, ClientStyleContext } from './context'
 import { PageHome } from './pages/PageHome/PageHome'
 import { mitobyteTheme } from './theme/mitobyte-theme'
+import splideCSSCore from '@splidejs/react-splide/dist/css/splide-core.min.css'
+import splideCSSTheme from '@splidejs/react-splide/dist/css/themes/splide-default.min.css'
 
 // export const meta: MetaFunction = () => ({
 //   charset: 'utf-8',
@@ -29,6 +31,14 @@ export let links: LinksFunction = () => {
     {
       rel: 'stylesheet',
       href: 'https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Glory:ital,wght@0,100..800;1,100..800&display=swap'
+    },
+    {
+      rel: 'stylesheet',
+      href: splideCSSCore,
+    },
+    {
+      rel: 'stylesheet',
+      href: splideCSSTheme,
     },
   ]
 }
