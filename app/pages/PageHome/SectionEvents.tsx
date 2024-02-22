@@ -11,7 +11,7 @@ export const SectionEvents = () => {
         <Heading textAlign="center" mb={5}>Our Core Events</Heading>
         <Text textAlign="center" maxW="lg" mb={9} mr="auto" ml="auto">Our core events comprise of 2 monthly networking and coding events. We also are working on adding two hackathons a year.</Text>
         <Flex margin="0 auto" mb={9} textAlign="center" justifyContent="center">
-          <Button as="a" variant='outline' leftIcon={<LogoMeetup />} href="" mr={3}>
+          <Button as="a" variant='outline' leftIcon={<LogoMeetup />} mr={3} href="https://www.meetup.com/milwaukee-code-and-coffee/events/">
             Meetup
           </Button>
           <Button as="a" variant='outline' leftIcon={<LogoEventbrite />} href="">
@@ -38,7 +38,7 @@ export const SectionEvents = () => {
             linkOther=''
           />
           <CardEvent
-            imageSrc="/events/event-hackreation.png"
+            imageSrc="/events/event-hackreation-big.png"
             heading="Hackreation"
             // description="Our newest recurring event. Come to this event for focused hacking or working on person projects and show and tell at the end."
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."

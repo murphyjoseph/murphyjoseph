@@ -27,7 +27,7 @@ export const CardEvent = ({
           objectFit='cover'
           src={imageSrc}
           alt='event image'
-          maxWidth="150px"
+          maxHeight="60px"
           // pb={3}
         />
         {/* <Heading size='md'>{heading}</Heading> */}

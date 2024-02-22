@@ -20,7 +20,9 @@ export const PageHome = () => {
       <SpacerSection>
         <SectionEvents />
       </SpacerSection>
-      <SectionPersons maxWidth="4xl"      />
+      <SectionPersons
+        maxWidth="4xl"
+      />
       <Wrapper
         paddingTop={20}
         paddingBottom={20}
