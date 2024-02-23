@@ -11,7 +11,7 @@ export interface WrapperProps {
   marginRight?: BoxProps['marginRight'];
   marginBottom?: BoxProps['marginBottom'];
   marginLeft?: BoxProps['marginLeft'];
-  maxWidth: ContainerProps['maxWidth'];
+  maxWidth?: ContainerProps['maxWidth'];
   children: React.ReactNode;
 }
 
@@ -25,7 +25,7 @@ export const Wrapper: FC<WrapperProps> = ({
   marginRight,
   marginBottom,
   marginLeft,
-  maxWidth,
+  maxWidth = 'full',
   children,
 }) => {
   return (

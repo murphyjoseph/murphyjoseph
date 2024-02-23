@@ -94,7 +94,7 @@ export default function App() {
   return (
     <Document>
       <ChakraProvider theme={mitobyteTheme}>
-        <PageHome />
+        {/* <PageHome /> */}
         <Outlet />
       </ChakraProvider>
     </Document>

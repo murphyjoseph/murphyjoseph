@@ -44,7 +44,7 @@ export const SectionSponsors: FC<SectionSponsorsProps> = ({
       marginRight={marginRight}
       marginTop={marginTop}
     >
-      <Heading textAlign="center" mb={14}>Sponsors</Heading>
+      <Heading textAlign="center" mb={10}>Sponsors</Heading>
       <SimpleGrid columns={[2, null, 3]} spacingX={9} spacingY={9} >
         {
           sponsors.map((sponsor) => (

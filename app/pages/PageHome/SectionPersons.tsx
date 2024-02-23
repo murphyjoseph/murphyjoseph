@@ -22,11 +22,11 @@ export const SectionPersons: FC<SectionPersonsProps> = ({
       paddingRight={paddingRight}
       maxWidth={maxWidth}
     >
-      <Container maxW="md">
+      <Container maxW="md" mb={12}>
         <Heading textAlign="center" mb="3">
           About Us
         </Heading>
-        <Text textAlign="center" mb="7">We are software engineers in the Milwaukee community, looking to connect with you!</Text>
+        <Text textAlign="center">We are software engineers in the Milwaukee community, looking to connect with you!</Text>
       </Container>
       <Container
         paddingTop={10}

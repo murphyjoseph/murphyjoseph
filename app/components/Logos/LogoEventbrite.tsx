@@ -4,7 +4,7 @@ export const LogoEventbrite = () => {
   return (
     <Image
       alt="eventbrite logo"
-      src="./third-party/logo-eventbrite.png"
+      src="../third-party/logo-eventbrite.png"
       width="25px"
     />
   )

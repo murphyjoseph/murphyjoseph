@@ -52,7 +52,7 @@ export const SectionHero: FC<SectionHeroProps> = ({
             textAlign="center"
             fontSize="6xl"
           >
-              Let's Build Together
+              Help Support Your Tech Community
           </Heading>
         </Box>
         <Image
