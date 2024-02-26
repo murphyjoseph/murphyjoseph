@@ -52,7 +52,7 @@ export const SectionHero: FC<SectionHeroProps> = ({
             textAlign="center"
             fontSize="6xl"
           >
-              Code + Brews
+              Code & Coffee
           </Heading>
         </Box>
         <Image

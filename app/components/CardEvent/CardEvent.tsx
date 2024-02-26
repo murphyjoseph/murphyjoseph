@@ -1,7 +1,8 @@
-import { Button, Card, CardBody, CardFooter, CardHeader, Heading, Link, Image } from "@chakra-ui/react"
+import { Button, Card, CardBody, CardFooter, CardHeader, Heading, Image } from "@chakra-ui/react"
 import { InfoIcon } from "@chakra-ui/icons"
 import { LogoEventbrite } from "../Logos/LogoEventbrite";
 import { LogoMeetup } from "../Logos/LogoMeetup.tsx";
+import { Link } from "@remix-run/react";
 
 export interface CardEventProps {
   heading: string;
@@ -9,7 +10,9 @@ export interface CardEventProps {
   imageSrc: string;
   linkMeetup?: string;
   linkEventbrite?: string;
-  linkOther?: string;
+  linkText?: string;
+  linkTo?: string;
+  showLink?: boolean;
 }
 
 export const CardEvent = ({
@@ -18,7 +21,9 @@ export const CardEvent = ({
   imageSrc,
   linkMeetup,
   linkEventbrite,
-  linkOther,
+  linkText,
+  linkTo,
+  showLink = true,
 }: CardEventProps) => {
   return (
     <Card maxW='md'>
@@ -28,6 +33,7 @@ export const CardEvent = ({
           src={imageSrc}
           alt='event image'
           maxHeight="60px"
+          margin="0 auto"
           // pb={3}
         />
         {/* <Heading size='md'>{heading}</Heading> */}
@@ -37,7 +43,7 @@ export const CardEvent = ({
         {description}
       </CardBody>
 
-      {/* <CardFooter
+      <CardFooter
         justify='space-between'
         flexWrap='wrap'
         columnGap={1}
@@ -48,13 +54,13 @@ export const CardEvent = ({
           },
         }}
       >
-        <Button as="a" flex='1' variant='ghost' leftIcon={<LogoMeetup />} href={linkMeetup}>
-          Meetup
-        </Button>
-        <Button as="a" flex='1' variant='ghost' leftIcon={<LogoEventbrite />} href={linkEventbrite}>
-          Eventbrite
-        </Button>
-      </CardFooter> */}
+        { showLink && (
+          <Button as={Link} flex='1' variant='ghost' leftIcon={<InfoIcon />} to={linkTo}>
+            {linkText}
+          </Button>
+          )
+        }
+      </CardFooter>
     </Card>
   )
 }

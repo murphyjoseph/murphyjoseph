@@ -49,27 +49,24 @@ export const SectionEvents: FC<SectionEventsProps> = ({
           heading="Code + Brews"
           // description="Occurs on the second Wednesday of every month. A Milwaukee coding meetup for any dev-curious, aspiring, or professional developer to work/hack on your project."
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
-          linkEventbrite=''
-          linkMeetup=''
-          linkOther=''
+          linkText='Learn More >'
+          linkTo='/codeandbrews'
         />
         <CardEvent
           imageSrc="/events/event-code-and-coffee.png"
           heading="Code & Coffee"
           // description="Occurs on the first Saturday of every month. A Milwaukee coding meetup for any dev-curious, aspiring, or professional developer to work/hack on your project."
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
-          linkEventbrite=''
-          linkMeetup=''
-          linkOther=''
+          linkText='Learn More >'
+          linkTo='/codeandcoffee'
         />
         <CardEvent
           imageSrc="/events/event-hackreation-big.png"
           heading="Hackreation"
           // description="Our newest recurring event. Come to this event for focused hacking or working on person projects and show and tell at the end."
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
-          linkEventbrite=''
-          linkMeetup=''
-          linkOther=''
+          linkText='Learn More >'
+          linkTo='/hackreation'
         />
       </SimpleGrid>
     </Wrapper>

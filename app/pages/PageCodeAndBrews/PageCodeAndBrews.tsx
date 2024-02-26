@@ -9,7 +9,6 @@ export const PageCodeAndBrews = () => {
       <SectionHero
         marginBottom={20}
       />
-
     </>
   )
 }
