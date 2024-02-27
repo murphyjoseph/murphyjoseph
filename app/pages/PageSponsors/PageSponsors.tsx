@@ -17,7 +17,6 @@ export const PageSponsors = () => {
         paddingBottom={20}
         maxWidth="2xl"
       />
-
       <SectionQuotes
         paddingTop={20}
         paddingBottom={20}
