@@ -1,8 +1,9 @@
-import { Text, Heading, Box, SimpleGrid, Container, Button, Flex } from '@chakra-ui/react'
+import { SimpleGrid } from '@chakra-ui/react'
 import { FC } from 'react'
 import { CardEvent } from '~/components/CardEvent/CardEvent'
 import { LogoEventbrite } from '~/components/Logos/LogoEventbrite'
 import { LogoMeetup } from '~/components/Logos/LogoMeetup.tsx'
+import { SectionIntroWithButtons } from '~/components/SectionIntro/SectionIntroWithButtons'
 import { Wrapper, WrapperProps } from '~/components/Wrapper/Wrapper'
 
 export interface SectionEventsProps extends Omit<WrapperProps, 'children'> {}
@@ -33,16 +34,17 @@ export const SectionEvents: FC<SectionEventsProps> = ({
       marginRight={marginRight}
       marginTop={marginTop}
     >
-      <Heading textAlign="center" mb={5}>Our Core Events</Heading>
-      <Text textAlign="center" maxW="lg" mb={6} mr="auto" ml="auto">Our core events comprise of 2 monthly networking and coding events. We also are working on adding two hackathons a year.</Text>
-      <Flex margin="0 auto" mb={14} textAlign="center" justifyContent="center">
-        <Button as="a" variant='outline' leftIcon={<LogoMeetup />} mr={3} href="https://www.meetup.com/milwaukee-code-and-coffee/events/">
-          Meetup
-        </Button>
-        <Button as="a" variant='outline' leftIcon={<LogoEventbrite />} href="">
-          Eventbrite
-        </Button>
-      </Flex>
+      <SectionIntroWithButtons
+        title="Our Core Events"
+        text="Our core events comprise of 2 monthly networking and coding events. We also are working on adding two hackathons a year."
+        showText
+        buttonOneText="Meetup"
+        buttonOneLink="https://www.meetup.com/milwaukee-code-and-coffee/events/"
+        buttonOneSlot={<LogoMeetup />}
+        buttonTwoText="Eventbrite"
+        buttonTwoLink=""
+        buttonTwoSlot={<LogoEventbrite />}
+      />
       <SimpleGrid columns={[3, null]} spacingX={9} spacingY={9} alignItems="stretch">
         <CardEvent
           imageSrc="/events/event-code-and-brews.png"

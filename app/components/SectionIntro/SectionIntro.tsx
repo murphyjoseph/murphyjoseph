@@ -27,7 +27,7 @@ export const SectionIntro: FC<SectionIntroProps> = ({
         <Text
           textAlign="center"
           maxW="lg"
-          mb={addBottomMargin ? 16 : 0}
+          mb={addBottomMargin ? 14 : 0}
           mr="auto"
           ml="auto"
         >
