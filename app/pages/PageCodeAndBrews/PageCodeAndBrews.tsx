@@ -1,6 +1,8 @@
 import { NavigationMain } from "~/components/Navigation/NavigationMain";
 import { SectionHero } from "./SectionHero";
 import { SectionGallery } from "./SectionGallery";
+import { SectionHowItWorks } from "./SectionHowItWorks";
+import { SectionPremierSponsor } from "./SectionPremeirSponsor";
 
 export const PageCodeAndBrews = () => {
 
@@ -8,6 +10,15 @@ export const PageCodeAndBrews = () => {
     <>
       <NavigationMain />
       <SectionHero
+        marginBottom={20}
+      />
+      <SectionPremierSponsor
+        paddingTop={20}
+        paddingBottom={20}
+        maxWidth="2xl"
+      />
+      <SectionHowItWorks
+        maxWidth="xl"
         marginBottom={20}
       />
       <SectionGallery
