@@ -14,7 +14,7 @@ I co-founded **[Mitobyte](https://www.mitobyte.com)**, a developer community bui
 
 ## Writings
 
-- **[Boundary First Architecture](./BOUNDARY_FIRST_ARCHITECTURE.md)** — Just something I've been noodling on about how FE codebases can get out of control quickly. Will work on another post to see how I might solve for it more concretely beyond just eslint plugins. (shout out to [Chris Hahn](https://github.com/runewolf7) as some of this has come from our previous chats)
+- **[Boundary First Architecture](./BOUNDARY_FIRST_ARCHITECTURE.md)** — Just something I've been noodling on about how FE codebases can get out of control quickly. Will work on another post to see how I might solve for it more concretely beyond just eslint plugins. Shout out to [Chris Hahn](https://github.com/runewolf7) as some of this has come from our previous chats.
 
 ## The Important Stuff
 
