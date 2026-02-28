@@ -12,12 +12,12 @@ I build with **React, TypeScript, and Next.js**, usually in complex domains like
 
 I co-founded **[Mitobyte](https://www.mitobyte.com)**, a developer community built around the idea that mentorship and confidence matter as much as technical skill.
 
-## Writing
+## Writings
 
-- **[Route → Realm → Domain → Platform (RRDP)](./RRDP.md)** — A lightweight architecture model for organizing frontend code by blast radius, not just by feature (shout out to [Chris Hahn](https://www.linkedin.com/in/christopher-a-hahn?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BUrQJxRgBQ9KdcBM6KaA2AA%3D%3D))
+- **[Boundary First Architecture](./BOUNDARY_FIRST_ARCHITECTURE.md)** — Just something I've been noodling on about how FE codebases can get out of control quickly. Will work on another post to see how I might solve for it more concretely beyond just eslint plugins. (shout out to [Chris Hahn](https://github.com/runewolf7) as some of this has come from our previous chats)
 
 ## The Important Stuff
 
-You made it to my GitHub — that earns you access to my most important ongoing project: a personally curated and ever-growing map of pizza spots worth your time.
+You made it to my GitHub! That earns you access to my most important ongoing project: a personally curated and ever-growing map of pizza spots worth your time.
 
 🍕 **[Check out the pizza list](https://maps.app.goo.gl/CB9NWishQzMnTPEF9)**
